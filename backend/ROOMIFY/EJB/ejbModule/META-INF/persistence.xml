@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+	<persistence-unit name="gestion_salle" transaction-type="JTA" >
+	<jta-data-source>java:/gestionsalles</jta-data-source>
+	 <class>entities.Utilisateur</class>
+	 <class>entities.Seance</class>
+	 <class>entities.Salle</class>
+	 <class>entities.Reservation</class>
+	 <class>entities.Filiere</class>
+	 <class>entities.Matiere</class>
+	 <class>entities.Notification</class>
+			<properties>
+			 <property name="hibernate.hbm2ddl.auto" value="update"/>
+			</properties>
+	</persistence-unit>
+</persistence>
